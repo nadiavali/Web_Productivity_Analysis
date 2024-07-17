@@ -1,2 +1,6 @@
 pandas
 Ipython
+ipython
+pyplot
+matplotlib
+numpy
