@@ -20,5 +20,5 @@ data = {
 df = pd.DataFrame(data)
 
 # Save the DataFrame to a CSV file
-file_path = '/Users/NadiaIT/Code/Data_Production/civ_data.csv'
+file_path = '/Users/NadiaIT/Code_IT/Production_Analysis/civ_data.csv'
 df.to_csv(file_path, index=False)
