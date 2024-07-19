@@ -1,6 +1,5 @@
-pandas
-Ipython
+pandas==2.2.2
 ipython
-pyplot
 matplotlib
 numpy
+scipy
