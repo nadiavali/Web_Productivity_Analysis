@@ -13,7 +13,7 @@ fig, axes = plt.subplots(1, 1, figsize=(16, 5))
 axes.set_title(f'{column.name} Distribution')
 
 # Generate the histogram of a column, specifying number of bins
-axes.hist(column, bins=100)
+axes.hist(column, bins=30)
 
 # Label the x-axis and y-axis
 axes.set_xlabel(column.name)

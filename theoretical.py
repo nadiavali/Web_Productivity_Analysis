@@ -1,9 +1,8 @@
 # Import mathematical and statistical libraries
 import numpy as np
 from scipy import stats
-from IPython.display import display
-import pandas as pd
 import matplotlib.pyplot as plt
+
 from main import data_a
 
 # Column selection
@@ -25,10 +24,15 @@ distribution = distributions[distribution_name]
 
 # Plotting
 fig, axes = plt.subplots(1, 1, figsize=(16, 5))  # Create a single plot
-axes.hist(column, bins=70, alpha=0.5, label=column.name, density=True)  # Histogram of the data
+# density=True normalizes the histogram so that the area under the histogram equals 1,
+# allowing it to be compared directly with the probability density function (PDF).
+axes.hist(column, bins=70, alpha=0.5, label=column.name, density=True)  # Histogram of the data, semi transparent thanks to alpha
 axes.plot(x_values, distribution, label='Theoretical Distribution')  # Theoretical distribution line
 axes.set_title(f'{distribution_name} Distribution')
 axes.set_xlabel(column.name)
 axes.set_ylabel('Density')
 axes.legend()  # Display legend
 plt.show()
+
+
+
