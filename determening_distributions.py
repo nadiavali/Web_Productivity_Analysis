@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from main import data_a
 
 # Setting up a function is the best way to opzimize time and space
+#  Plotting the distributions of a given dataset column for a specific group
 def plot_distributions(column, group_name):
     # Calculate the theoretical distributions based on the data
     x_values = np.linspace(min(column), max(column), 100)  
@@ -15,6 +16,7 @@ def plot_distributions(column, group_name):
     }
 
     # Set up a plot with 1 row and 3 columns
+    # We need 3 plots, no? yes
     fig, axes = plt.subplots(1, 3, figsize=(16, 5))  
     
     # Loop through each subplot and distribution # love the zip here(3 in 1)
@@ -31,3 +33,24 @@ def plot_distributions(column, group_name):
 
 # Call the function, it will answer
 plot_distributions(data_a['AOV'], 'Group A')
+plot_distributions(data_a['AOV'], 'Group B')
+plot_distributions(data_a['Total_Amount_Spent'], 'Group A')
+plot_distributions(data_a['Total_Amount_Spent'], 'Group B')
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
