@@ -2,18 +2,18 @@ from IPython.display import display
 import pandas as pd
 
 # Read the CSV file into a DataFrame
-data = pd.read_csv('CSV_data.csv')
+data = pd.read_csv("CSV_data.csv")
 
 display(data)
 
 
-data_a = data[data['Group'] == 'A']
-data_b = data[data['Group'] == 'B']
+data_a = data[data["Group"] == "A"]
+data_b = data[data["Group"] == "B"]
 
 display(data_a.describe())
 display(data_b.describe())
 
-'''
+"""
 This function provides insights into:
 *Statistic	Description
 count	The number of non-missing values
@@ -25,6 +25,4 @@ min	The minimum value
 75%	The 75th percentile or the third quartile
 max	The maximum value
 
-'''
-
-
+"""
