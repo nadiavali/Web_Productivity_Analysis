@@ -7,6 +7,7 @@ from main import data_a
 
 # Column selection
 column = data_a['AOV']  
+sorted_column = np.sort(column)
 
 # Calculate the theoretical distributions based on the data
 x_values = np.linspace(min(column), max(column), 100)  # Create a range of values for the x-axis

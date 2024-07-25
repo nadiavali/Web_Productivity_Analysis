@@ -2,7 +2,7 @@ import numpy as np
 from scipy import stats
 import matplotlib.pyplot as plt
 
-from main import data_a
+from main import data_a, data_b
 
 # Setting up a function is the best way to opzimize time and space
 #  Plotting the distributions of a given dataset column for a specific group
@@ -33,9 +33,9 @@ def plot_distributions(column, group_name):
 
 # Call the function, it will answer
 plot_distributions(data_a['AOV'], 'Group A')
-plot_distributions(data_a['AOV'], 'Group B')
+plot_distributions(data_b['AOV'], 'Group B')
 plot_distributions(data_a['Total_Amount_Spent'], 'Group A')
-plot_distributions(data_a['Total_Amount_Spent'], 'Group B')
+plot_distributions(data_b['Total_Amount_Spent'], 'Group B')
 
       
 
